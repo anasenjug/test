@@ -356,3 +356,11 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\obj\Debug\example.web
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\obj\Debug\example.webapi.csproj.CopyComplete
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\obj\Debug\example.webapi.dll
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\obj\Debug\example.webapi.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Extensions.DependencyInjection.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\example.services.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\services.common.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Extensions.DependencyInjection.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml

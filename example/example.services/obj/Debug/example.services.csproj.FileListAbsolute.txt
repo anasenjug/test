@@ -44,3 +44,11 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.services\obj\Debug\example.s
 E:\OneDrive - etfos.hr\Desktop\test\example\example.services\obj\Debug\example.services.csproj.CopyComplete
 E:\OneDrive - etfos.hr\Desktop\test\example\example.services\obj\Debug\example.services.dll
 E:\OneDrive - etfos.hr\Desktop\test\example\example.services\obj\Debug\example.services.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\example.services.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Autofac.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\services.common.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Autofac.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.services\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

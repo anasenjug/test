@@ -73,8 +73,12 @@ namespace example.repository
                 {
 
                     command.Parameters.AddWithValue("@id", theater.id);
-                    command.Parameters.AddWithValue("@name", theater.name ?? "");
-                    command.Parameters.AddWithValue("@address", theater.address ?? "");
+                    command.Parameters.AddWithValue("@name", theater.name );
+                    command.Parameters.AddWithValue("@address", theater.address );
+                    if(theater.address ==null || theater.name==null)
+                    {
+                        return null;
+                    }
 
                     int rowsAffected = command.ExecuteNonQuery();
 
@@ -133,7 +137,7 @@ namespace example.repository
             }
         }
 
-        public bool ChangeName(Guid id, Theater updatedTheater)
+        public Theater ChangeName(Guid id, Theater updatedTheater)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
@@ -156,11 +160,11 @@ namespace example.repository
                             address = updatedTheater.address
                         };
 
-                        return true;
+                        return updatedTheater;
                     }
                     else
                     {
-                        return false;
+                        return null;
                     }
                 }
             }

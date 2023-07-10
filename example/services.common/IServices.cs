@@ -13,7 +13,7 @@ namespace services.common
         List<Theater> ListTheaters();
         Theater GetTheaterById(Guid id);
         Theater AddTheater(Theater theater);
-        bool ChangeName(Guid id, Theater updatedTheater);
+        Theater ChangeName(Guid id, Theater updatedTheater);
         bool Delete(Guid id);
     }
 }

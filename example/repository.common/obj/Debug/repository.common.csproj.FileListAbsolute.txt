@@ -39,3 +39,9 @@ E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\obj\Debug\reposito
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\obj\Debug\repository.common.csproj.CopyComplete
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\obj\Debug\repository.common.dll
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\obj\Debug\repository.common.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

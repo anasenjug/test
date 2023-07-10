@@ -36,3 +36,9 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.model\obj\Debug\example.mode
 E:\OneDrive - etfos.hr\Desktop\test\example\example.model\obj\Debug\example.model.csproj.CopyComplete
 E:\OneDrive - etfos.hr\Desktop\test\example\example.model\obj\Debug\example.model.dll
 E:\OneDrive - etfos.hr\Desktop\test\example\example.model\obj\Debug\example.model.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Autofac.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Autofac.Extensions.DependencyInjection.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Autofac.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Autofac.Extensions.DependencyInjection.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.model\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

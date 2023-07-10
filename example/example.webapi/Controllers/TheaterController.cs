@@ -59,21 +59,29 @@ namespace example.webapi.Controllers
         }
 
         [HttpPost]
-        public HttpResponseMessage AddTheater([FromBody] Theater theater)
+        public HttpResponseMessage AddTheater([FromBody] TheaterView theater)
         {
             if (theater == null) return Request.CreateResponse(HttpStatusCode.BadRequest);
-            theater=iTheaterServices.AddTheater(theater);
+            Theater addedTheater = iTheaterServices.AddTheater(new Theater
+            {
+                name = theater.name,
+                address = theater.address
+            });
+            
             if(theater==null) return Request.CreateResponse(HttpStatusCode.InternalServerError);
-            return Request.CreateResponse(HttpStatusCode.OK,theater);
+            return Request.CreateResponse(HttpStatusCode.OK,new TheaterView {
+                name=theater.name,
+                address=theater.address
+            });
         }
 
         [HttpPut]
         public HttpResponseMessage ChangeName(Guid id, [FromBody] Theater updatedTheater)
         {
             if (updatedTheater == null) return Request.CreateResponse(HttpStatusCode.BadRequest);
-            if (iTheaterServices.ChangeName(id,updatedTheater) == true) return Request.CreateResponse(HttpStatusCode.OK, updatedTheater);
 
-            return Request.CreateResponse(HttpStatusCode.InternalServerError);
+            return Request.CreateResponse(HttpStatusCode.OK,updatedTheater);
+
         }
 
         // DELETE: api/Theater/5
