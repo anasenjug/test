@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>77dd9544-5d14-4cd1-8c2f-3eb8b0996034</ProjectGuid>
+    <ProjectGuid>{77DD9544-5D14-4CD1-8C2F-3EB8B0996034}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>example.services</RootNamespace>
@@ -31,24 +31,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TheaterServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\example.model\example.model.csproj">
+      <Project>{B359707A-5486-420A-86A9-5641AD600CD5}</Project>
+      <Name>example.model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\example.repository\example.repository.csproj">
+      <Project>{D09EEE35-1EB7-4989-895F-6349E4742F85}</Project>
+      <Name>example.repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\repository.common\repository.common.csproj">
+      <Project>{D05234D1-A653-42EC-9AF2-80762A3A56B2}</Project>
+      <Name>repository.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\services.common\services.common.csproj">
+      <Project>{000F616B-36EA-486D-828B-CC955118F731}</Project>
+      <Name>services.common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
