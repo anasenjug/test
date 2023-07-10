@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace example.model
 {
-    internal class TheaterView
+    public class TheaterView
     {
-
+        public string name { get; set; }
+        public string address { get; set; }
     }
 }

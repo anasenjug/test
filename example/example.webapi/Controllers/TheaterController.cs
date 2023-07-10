@@ -1,8 +1,10 @@
-﻿using example.services;
+﻿using example.model;
+using example.services;
 using Npgsql;
 using services.common;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -18,12 +20,20 @@ namespace example.webapi.Controllers
         public TheaterController()
         {
             iTheaterServices = new TheaterServices();
+           
         }
         public HttpResponseMessage GetTheaters()
         {
             try
             {
-                List<Theater> theaters = iTheaterServices.ListTheaters();
+                List<TheaterView> theaters = iTheaterServices.ListTheaters()
+                .Select(theater => new TheaterView
+                {
+                    name = theater.name,
+                    address = theater.address
+                })
+                .ToList();
+
                 if (theaters == null) throw new Exception();
                 return Request.CreateResponse(HttpStatusCode.OK, theaters);
             }
