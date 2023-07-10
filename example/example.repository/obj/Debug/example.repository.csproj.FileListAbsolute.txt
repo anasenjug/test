@@ -1,0 +1,6 @@
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\bin\Debug\example.repository.dll
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\bin\Debug\example.repository.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\obj\Debug\example.repository.csproj.AssemblyReference.cache
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\obj\Debug\example.repository.csproj.CoreCompileInputs.cache
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\obj\Debug\example.repository.dll
+E:\OneDrive - etfos.hr\Desktop\test\example.repository\obj\Debug\example.repository.pdb
