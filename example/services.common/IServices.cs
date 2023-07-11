@@ -1,4 +1,5 @@
-﻿using example.webapi.Controllers;
+﻿using example.common;
+using example.webapi.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace services.common
 {
     public interface IServices
     {
-        List<Theater> ListTheaters();
+        List<Theater> ListTheaters(Paging paging, Sorting sorting, TheaterFilter theaterFilter);
         Theater GetTheaterById(Guid id);
         Theater AddTheater(Theater theater);
         Theater ChangeName(Guid id, Theater updatedTheater);

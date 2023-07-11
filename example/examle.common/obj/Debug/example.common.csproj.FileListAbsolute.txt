@@ -1,0 +1,15 @@
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\examle.common.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\examle.common.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\examle.common.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\EntityFramework.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\EntityFramework.SqlServer.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\example.model.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\example.model.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\example.model.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\EntityFramework.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\bin\Debug\EntityFramework.SqlServer.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\obj\Debug\example.common.csproj.AssemblyReference.cache
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\obj\Debug\example.common.csproj.CoreCompileInputs.cache
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\obj\Debug\example.common.csproj.CopyComplete
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\obj\Debug\examle.common.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\examle.common\obj\Debug\examle.common.pdb

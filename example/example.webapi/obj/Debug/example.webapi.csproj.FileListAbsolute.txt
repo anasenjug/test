@@ -366,3 +366,10 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Extension
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Integration.WebApi.dll
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Integration.WebApi.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\EntityFramework.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\EntityFramework.SqlServer.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\examle.common.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\examle.common.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\examle.common.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\EntityFramework.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\EntityFramework.SqlServer.xml

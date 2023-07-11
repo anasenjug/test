@@ -1,10 +1,13 @@
-﻿using example.repository;
+﻿using example.common;
+using example.repository;
 using example.webapi.Controllers;
 using Npgsql;
 using repository.common;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Net;
+using System.Text;
 
 namespace example.repository
 {
@@ -17,12 +20,36 @@ namespace example.repository
         }
 
 
-        public List<Theater> ListTheaters()
+        public List<Theater> ListTheaters(Paging paging,Sorting sorting, TheaterFilter theaterFilter)
         {
             List<Theater> theaters = new List<Theater>();
+
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT * FROM \"Theater\"";
+
+                StringBuilder stringBuilder=new StringBuilder("SELECT * FROM \"Theater\"");
+                StringBuilder count = new StringBuilder("SELECT COUNT (*) FROM \"Theater\"");
+
+                stringBuilder.Append("WHERE 1=1");
+    
+
+                if(theaterFilter.Name!= null) {
+                    stringBuilder.Append($"AND \"Name\" LIKE '{theaterFilter.Name}' ");
+                    count.Append($"AND \"Name\" LIKE  '{theaterFilter.Name}' ");
+
+                }
+
+                stringBuilder.Append(" ORDER BY ").Append(sorting.OrderBy).Append(" ").Append(sorting.SortOrder);
+                
+
+                if (paging.PageSize>0 && paging.PageNumber>0) {
+                    int skip = (int)((paging.PageNumber - 1) * paging.PageSize);
+                    stringBuilder.Append(" OFFSET ").Append(skip).Append(" LIMIT ").Append(paging.PageSize);
+                }
+                
+                string query=stringBuilder.ToString();
+                string countQuery=count.ToString();
+
                 connection.Open();
 
                 using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
@@ -35,7 +62,7 @@ namespace example.repository
 
                             while (reader.Read())
                             {
-
+                                
                                 Theater theater = new Theater();
                                 theater.id = reader.GetGuid(reader.GetOrdinal("Id"));
                                 theater.name = reader.GetString(reader.GetOrdinal("Name"));

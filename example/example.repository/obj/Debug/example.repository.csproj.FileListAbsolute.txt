@@ -62,3 +62,10 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\Autofac
 E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\Newtonsoft.Json.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\System.Net.Http.Formatting.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\System.Web.Http.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\EntityFramework.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\examle.common.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\examle.common.pdb
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\examle.common.dll.config
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\EntityFramework.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.repository\bin\Debug\EntityFramework.SqlServer.xml

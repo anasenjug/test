@@ -1,5 +1,7 @@
-﻿using example.model;
+﻿using example.common;
+using example.model;
 using example.services;
+using Microsoft.Ajax.Utilities;
 using Npgsql;
 using services.common;
 using System;
@@ -22,11 +24,29 @@ namespace example.webapi.Controllers
             _iTheaterServices = iTheaterServices;
            
         }
-        public HttpResponseMessage GetTheaters()
+        public HttpResponseMessage GetTheaters(int pageSize=5,int pageNumber=1,string orderBy="Id",string sortOrder="ASC", string name=null)
         {
             try
             {
-                List<TheaterView> theaters = _iTheaterServices.ListTheaters()
+                Sorting sorting=new Sorting();  
+                Paging paging=new Paging(); 
+                TheaterFilter theaterFilter=new TheaterFilter();    
+
+                sorting.OrderBy = orderBy;  
+                sorting.SortOrder = sortOrder;  
+                paging.PageSize = pageSize; 
+                paging.PageNumber = pageNumber;
+
+                if (paging.PageNumber < 1 || paging.PageSize < 1 || (sorting.SortOrder.ToLower() != "asc" && sorting.SortOrder.ToLower() != "desc"))
+                {
+                    return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Bad request");
+                }
+
+                if(!theaterFilter.Name.IsNullOrWhiteSpace()) {
+                    theaterFilter.Name = name;
+                }
+
+                List<TheaterView> theaters = _iTheaterServices.ListTheaters(paging,sorting,theaterFilter)
                 .Select(theater => new TheaterView
                 {
                     name = theater.name,

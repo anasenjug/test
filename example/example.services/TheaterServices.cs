@@ -1,4 +1,5 @@
-﻿using example.repository;
+﻿using example.common;
+using example.repository;
 using example.webapi.Controllers;
 using repository.common;
 using services.common;
@@ -18,9 +19,9 @@ namespace example.services
         {
             _repo = repo;
         }
-        public List<Theater> ListTheaters()
+        public List<Theater> ListTheaters(Paging paging, Sorting sorting, TheaterFilter theaterFilter)
         {
-            List<Theater> theaters = _repo.ListTheaters();
+            List<Theater> theaters = _repo.ListTheaters(paging, sorting , theaterFilter);
             if (theaters == null || theaters.Count == 0)
             {
                 return null;
