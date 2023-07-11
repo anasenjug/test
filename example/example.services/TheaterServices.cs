@@ -12,15 +12,15 @@ namespace example.services
 {
     public class TheaterServices : IServices
     {
-        public IRepository repo;
+       IRepository _repo;
 
-        public TheaterServices()
+        public TheaterServices(IRepository repo)
         {
-            repo = new TheaterRepository();
+            _repo = repo;
         }
         public List<Theater> ListTheaters()
         {
-            List<Theater> theaters = repo.ListTheaters();
+            List<Theater> theaters = _repo.ListTheaters();
             if (theaters == null || theaters.Count == 0)
             {
                 return null;
@@ -32,9 +32,9 @@ namespace example.services
         }
 
       
-        public Theater GetTheaterById(Guid id) =>repo.GetTheaterById(id);   
-        public Theater AddTheater(Theater theater) => repo.AddTheater(theater);
-        public Theater ChangeName(Guid id, Theater updatedTheater) =>repo.ChangeName(id,updatedTheater);
-        public bool Delete(Guid id) =>repo.Delete(id);
+        public Theater GetTheaterById(Guid id) =>_repo.GetTheaterById(id);   
+        public Theater AddTheater(Theater theater) => _repo.AddTheater(theater);
+        public Theater ChangeName(Guid id, Theater updatedTheater) =>_repo.ChangeName(id,updatedTheater);
+        public bool Delete(Guid id) =>_repo.Delete(id);
     }
 }

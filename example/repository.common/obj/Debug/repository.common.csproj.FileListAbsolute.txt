@@ -45,3 +45,11 @@ E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Microsof
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.Extensions.DependencyInjection.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.Integration.WebApi.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Newtonsoft.Json.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\System.Net.Http.Formatting.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\System.Web.Http.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Autofac.Integration.WebApi.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\Newtonsoft.Json.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\System.Net.Http.Formatting.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\repository.common\bin\Debug\System.Web.Http.xml

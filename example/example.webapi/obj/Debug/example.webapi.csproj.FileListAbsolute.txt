@@ -364,3 +364,5 @@ E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\services.common.d
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Extensions.DependencyInjection.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Integration.WebApi.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\example.webapi\bin\Autofac.Integration.WebApi.xml

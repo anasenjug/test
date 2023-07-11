@@ -11,9 +11,9 @@ namespace example.repository
 
     public class TheaterRepository : IRepository
     {
-        public string connectionString;
-        public TheaterRepository() {
-            connectionString  = "Server=localhost;Port=5432;Username=postgres;Password=admin;Database=postgres";
+        private readonly string connectionString;
+        public TheaterRepository(string connectionString) {
+            this.connectionString = connectionString;  
         }
 
 

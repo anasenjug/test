@@ -15,18 +15,18 @@ namespace example.webapi.Controllers
 
     public class TheaterController : ApiController
     {
-        public IServices iTheaterServices;
+        public IServices _iTheaterServices;
 
-        public TheaterController()
+        public TheaterController(IServices iTheaterServices)
         {
-            iTheaterServices = new TheaterServices();
+            _iTheaterServices = iTheaterServices;
            
         }
         public HttpResponseMessage GetTheaters()
         {
             try
             {
-                List<TheaterView> theaters = iTheaterServices.ListTheaters()
+                List<TheaterView> theaters = _iTheaterServices.ListTheaters()
                 .Select(theater => new TheaterView
                 {
                     name = theater.name,
@@ -46,7 +46,7 @@ namespace example.webapi.Controllers
         public HttpResponseMessage GetTheaterById(Guid id)
         {
             if (id == null) return Request.CreateResponse(HttpStatusCode.BadRequest);
-            Theater theater =iTheaterServices.GetTheaterById(id);
+            Theater theater =_iTheaterServices.GetTheaterById(id);
 
             if (theater == null)
             {
@@ -62,7 +62,7 @@ namespace example.webapi.Controllers
         public HttpResponseMessage AddTheater([FromBody] TheaterView theater)
         {
             if (theater == null) return Request.CreateResponse(HttpStatusCode.BadRequest);
-            Theater addedTheater = iTheaterServices.AddTheater(new Theater
+            Theater addedTheater = _iTheaterServices.AddTheater(new Theater
             {
                 name = theater.name,
                 address = theater.address
@@ -87,7 +87,7 @@ namespace example.webapi.Controllers
         // DELETE: api/Theater/5
         public HttpResponseMessage Delete(Guid id)
         {
-            if (iTheaterServices.Delete(id) == true) return Request.CreateResponse(HttpStatusCode.OK, "Theater has been deleted successfully");
+            if (_iTheaterServices.Delete(id) == true) return Request.CreateResponse(HttpStatusCode.OK, "Theater has been deleted successfully");
             return Request.CreateResponse(HttpStatusCode.InternalServerError);  
             
         }

@@ -29,3 +29,11 @@ E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Mem
 E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Numerics.Vectors.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\Autofac.Integration.WebApi.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\Newtonsoft.Json.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Net.Http.Formatting.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Web.Http.dll
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\Autofac.Integration.WebApi.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\Newtonsoft.Json.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Net.Http.Formatting.xml
+E:\OneDrive - etfos.hr\Desktop\test\example\services.common\bin\Debug\System.Web.Http.xml
