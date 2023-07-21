@@ -42,8 +42,12 @@ namespace example.webapi.Controllers
                     return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Bad request");
                 }
 
-                if(!theaterFilter.Name.IsNullOrWhiteSpace()) {
+                if(!name.IsNullOrWhiteSpace()) {
                     theaterFilter.Name = name;
+                }
+                else
+                {
+                    theaterFilter = null;
                 }
 
                 List<TheaterView> theaters = _iTheaterServices.ListTheaters(paging,sorting,theaterFilter)
