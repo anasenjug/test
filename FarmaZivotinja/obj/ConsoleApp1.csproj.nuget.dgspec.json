@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ana\\source\\repos\\mono_praksa\\day1\\FarmaZivotinja\\ConsoleApp1.csproj": {}
+    "E:\\OneDrive - etfos.hr\\Desktop\\test\\FarmaZivotinja\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ana\\source\\repos\\mono_praksa\\day1\\FarmaZivotinja\\ConsoleApp1.csproj": {
+    "E:\\OneDrive - etfos.hr\\Desktop\\test\\FarmaZivotinja\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ana\\source\\repos\\mono_praksa\\day1\\FarmaZivotinja\\ConsoleApp1.csproj",
+        "projectUniqueName": "E:\\OneDrive - etfos.hr\\Desktop\\test\\FarmaZivotinja\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\Ana\\source\\repos\\mono_praksa\\day1\\FarmaZivotinja\\ConsoleApp1.csproj",
+        "projectPath": "E:\\OneDrive - etfos.hr\\Desktop\\test\\FarmaZivotinja\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ana\\source\\repos\\mono_praksa\\day1\\FarmaZivotinja\\obj\\",
+        "outputPath": "E:\\OneDrive - etfos.hr\\Desktop\\test\\FarmaZivotinja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ana\\AppData\\Roaming\\NuGet\\NuGet.Config",

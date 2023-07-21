@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    background-color: #2E6B5C;
+    color:aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#students{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#students td, #students th{
+    border: 1px solid #ddd;
+  padding: 8px;
+}
+#students th{
+    color:#f2f2f2;
+    background-color: #0d3329;
+}
+
+#students tr{
+    background-color: #f2f2f2;}
+#students th:hover {background-color: #f2f2f2; color:#0d3329;}
+#students td{
+    color:#0d3329;
+
+}
+#students td:hover{
+    background-color:rgb(189, 202, 212);
+    color:#0d3329;
+}
+
+#studentform{
+    width: 100%;
+}
+#fname, #lname,#address,#university,#studyarea,#email,#emaillogin{
+    width: 30%;
+    padding:0.5%;
+}
+#fname:hover, #lname:hover,#address:hover,#university:hover,#studyarea:hover,#email:hover,#emaillogin:hover{
+    background-color:rgb(189, 202, 212);
+}
+
+label{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#submit,#submitstudent,#clearButton,#showAllStudentsButton,#editProfileButton{
+    width: 10%;
+    padding:0.5%;
+    background-color: aliceblue;
+    color: #0d3329;
+}
+#submit:hover,#submitstudent:hover,#clearButton:hover,#showAllStudentsButton:hover,#editProfileButton:hover{
+    background-color: #0d3329;
+    color: aliceblue;}
+
+#editstudent,#savestudent,#showall,#register,#login,#newinput{
+    width: 10%;
+    padding:0.5%;
+    background-color: aliceblue;
+    color: #0d3329;
+    }
+#editstudent:hover,#savestudent:hover,#showall:hover,#register:hover,#login:hover,#newinput:hover{
+    background-color: #0d3329;
+    color: aliceblue;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student</title>
+</head>
+<body>
+    <div class="studentinput">
+        <h1 id="sh1">Welcome! Please input your info.</h1>
+        <form id="studentform">
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname" id="lname" required><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="university">University:</label><br>
+            <input type="text" id="university" name="university" required><br>
+            <label for="studyarea">Study Area:</label><br>
+            <input type="text" id="studyarea" name="studyarea" required><br>
+            <br>
+     
+            <label for="gender" id="gender">Gender:</label><br>
+            <input type="radio" id="m" name="gender" value="m" required>
+            <label for="m">Male</label>
+            <input type="radio" id="f" name="gender" value="f" required>
+            <label for="f">Female</label><br>
+            <br>
+            <input type="submit" id="submitstudent" value="Submit">
+        </form><br>
+
+     
+    </div>
+    <div class="studentinfo">
+        <h1>Student list</h1>
+        <table id="students">
+            <thead>
+                <tr>
+              
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>University</th>
+                    <th>Study Area</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody id="studentsBody">
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button id="clearButton">Clear Table</button>
+
+    <button id="editProfileButton">Edit Profile</button>
+
+    <div class="edit-form" style="display: none;">
+        <h2>Edit Student Record</h2>
+        <form id="editForm">
+          <label for="editEmail">Email:</label><br>
+          <input type="email" id="editEmail" name="editEmail" required><br>
+          <label for="editFirstName">First name:</label><br>
+          <input type="text" id="editFirstName" name="editFirstName" required><br>
+          <label for="editLastName">Last name:</label><br>
+          <input type="text" name="editLastName" id="editLastName" required><br>
+          <label for="editAddress">Address:</label><br>
+          <input type="text" id="editAddress" name="editAddress" required><br>
+          <label for="editUniversity">University:</label><br>
+          <input type="text" id="editUniversity" name="editUniversity" required><br>
+          <label for="editStudyArea">Study Area:</label><br>
+          <input type="text" id="editStudyArea" name="editStudyArea" required><br>
+          <br>
+          <label for="editGender">Gender:</label><br>
+          <input type="radio" id="editMale" name="editGender" value="m" required>
+          <label for="editMale">Male</label>
+          <input type="radio" id="editFemale" name="editGender" value="f" required>
+          <label for="editFemale">Female</label><br>
+          <br>
+          <input type="submit" id="editSubmit" value="Save Changes">
+          <input type="button" id="editCancel" value="Cancel">
+        </form>
+      </div>
+
+      
+     
+
+    <script src="script.js"></script>
+</body>
+</html>
