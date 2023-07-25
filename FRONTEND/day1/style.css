@@ -13,7 +13,7 @@ body{
 }
 #students td, #students th{
     border: 1px solid #ddd;
-  padding: 8px;
+    padding: 8px;
 }
 #students th{
     color:#f2f2f2;
