@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Internship from "./Internship";
+import Button from "./Button";
+
+import { HttpHeader } from "./HttpHeader";
 
 const GetAllInternships = () => {
   const [internships, setInternships] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    axios
-      .get("https://localhost:44332/api/Internship")
+  async function handleFetchInternships() {
+    setIsLoading(true);
+    await axios
+      .get("https://localhost:44332/api/Internship", {
+        headers: HttpHeader.get(),
+      })
       .then((response) => {
         const internshipsData = response.data;
         const internships = internshipsData["Data"].map((data) => {
@@ -26,15 +33,20 @@ const GetAllInternships = () => {
           );
         });
         setInternships(internships);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching internships:", error);
+        setIsLoading(false);
       });
-  }, []);
+  }
 
   return (
     <div>
       <h1>List of Internships</h1>
+      <Button onClick={handleFetchInternships} disabled={isLoading}>
+        {isLoading ? "Loading..." : "Fetch Internships"}
+      </Button>
       <ul>
         {internships.map((internship) => (
           <li key={internship.studyAreaId}>

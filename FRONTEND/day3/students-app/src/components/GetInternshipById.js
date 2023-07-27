@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Internship from "./Internship";
 import Button from "./Button";
+import { HttpHeader } from "./HttpHeader";
 
 const GetInternshipById = () => {
   const [internshipId, setInternshipId] = useState("");
@@ -15,7 +16,9 @@ const GetInternshipById = () => {
     event.preventDefault();
     if (internshipId) {
       axios
-        .get(`https://localhost:44332/api/Internship/${internshipId}`)
+        .get(`https://localhost:44332/api/Internship/${internshipId}`, {
+          headers: HttpHeader.get(),
+        })
         .then((response) => {
           const internshipData = response.data;
           const internship = new Internship(

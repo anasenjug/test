@@ -1,0 +1,5 @@
+export class Server {
+  static url = "https://localhost:44332/api/";
+  static token =
+    "FZZO-905so0ne394teRrp4dEjPXmMoQiqpXxmA8V2-ec3yKbdSLYnCm07mOqYAMXK7IR14uHACCXudRwPXPOWMVL7nRVaiX0xdYy595V0gzfTrA6oBy9Px7BuFUbhlT60p9-G6NBOc89lPnG-PgDnvW-5pwLn2JeQKD3I2SgfKb8s4iuv_kCR6uEBdqAStpPeNV_c9D3VQ4qFDwo-wcU22lc7ID0DUErUGlNFAZUcmXtXl8lX1bYg5N6PPGjFQTehiLM_snBLwTD0Sjk6CHVGrzW668KKOxfugqcRynDmcHeiCzNamy_EWnW50gkwoaH9OvpasmyG4iJzAhCzLgzrao8IZr5yHw-H5UUUGCzBqyeaiUfCTR7spoakv48SPccr2D_0Fxe8TL4eRZfXJrIdn0ooVScTS0_kF8k-PKc7nZq1STCjh71JMB8-eSIULmSsaJayO467JCBFlpvpSsi5n9iiKYZp6vDMK0gJXWAf6hx4D7lis--SM6W370lgpIi";
+}

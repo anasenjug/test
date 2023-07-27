@@ -1,0 +1,32 @@
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(54, 54, 58);
+    color: whitesmoke;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    width: 40%;
+  }
+  
+  /* Adjust the width of the links to distribute the space evenly */
+  .nav-links a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  /* Optional: Add some padding and hover effect to the links */
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+  }
